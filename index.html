@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5ab90c9da4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Angelo Guilhermino</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <h1>Angelo Guilhermino</h1>
+        </div>
+        <ul>
+            <li><a target="_blank" href="https://github.com/0guilhermino">github</a></li>
+            <li><a target="_blank" href="https://mailto:angeloguilhermino@gmail.com">email</a></li>
+            <li><a target="_blank" href="https://wa.me/5581984900635">whatsapp</a></li>
+        </ul>
+
+
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Angelo Guilhermino</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>Este projeto foi desenvolvido durante os modulos de html e css da academia criptoDev da Gama Academy
+                    e teve como propósito colocar em prática os conhecimentos adquiridos sobre html e Css e pequenas
+                    funções javascript.</p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation')
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about')
+            display.classList.toggle('active')
+        }
+    </script>
+
+</body>
+
+</html>
